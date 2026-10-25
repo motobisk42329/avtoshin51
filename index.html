@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авто-Шин 51 — Профессиональный шиномонтаж в Мурманске</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#0f1115',
+                        cardbg: '#181b22',
+                        cardborder: '#262b36',
+                        accent: '#ef4444', /* автомобильный красный */
+                        accenthover: '#dc2626'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-darkbg text-gray-100 font-sans antialiased selection:bg-accent selection:text-white pb-20 md:pb-0">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-darkbg/85 backdrop-blur-md border-b border-cardborder">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-accent/10 border border-accent/30 flex items-center justify-center text-accent text-xl">
+                    <i class="fa-solid fa-car-burst"></i>
+                </div>
+                <div>
+                    <span class="font-black tracking-wider text-lg block text-white leading-tight">АВТО-ШИН 51</span>
+                    <span class="text-xs text-gray-400">Мурманск • Кольский пр., 55</span>
+                </div>
+            </div>
+            <div class="flex items-center space-x-3">
+                <a href="tel:+79512950712" class="hidden sm:inline-flex items-center space-x-2 bg-cardbg hover:bg-cardborder border border-cardborder px-4 py-2 rounded-xl text-sm font-medium transition">
+                    <i class="fa-solid fa-phone text-accent"></i>
+                    <span>+7 (951) 295-07-12</span>
+                </a>
+                <a href="https://yandex.ru/maps/org/avto_shin_51/150401003777" target="_blank" class="bg-accent hover:bg-accenthover text-white px-4 py-2 rounded-xl text-sm font-bold transition flex items-center space-x-2 shadow-lg shadow-accent/20">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Маршрут</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-12 pb-16 lg:pt-20 lg:pb-24">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-600/10 via-transparent to-transparent pointer-events-none"></div>
+        <div class="max-w-6xl mx-auto px-4 relative z-10">
+            <div class="max-w-3xl">
+                <!-- Rating Badge -->
+                <div class="inline-flex items-center space-x-2 bg-cardbg border border-cardborder px-3 py-1.5 rounded-full text-sm mb-6">
+                    <div class="flex text-amber-400 space-x-0.5 text-xs">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="font-semibold text-white">4.9 на Яндекс Картах</span>
+                    <span class="text-gray-500">•</span>
+                    <span class="text-gray-400">84+ оценки</span>
+                    <span class="text-gray-500">•</span>
+                    <span class="text-emerald-400 font-medium">Ежедневно 09:00–22:00</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white mb-6 leading-tight">
+                    Профессиональный шиномонтаж и <span class="text-accent">ремонт колес</span> в Мурманске
+                </h1>
+
+                <p class="text-lg sm:text-xl text-gray-300 mb-8 leading-relaxed">
+                    Все виды шиномонтажных работ на Кольском проспекте, 55. Быстро, аккуратно и с гарантией. Точная балансировка, правка дисков и дошиповка резины.
+                </p>
+
+                <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 mb-12">
+                    <a href="tel:+79512950712" class="bg-accent hover:bg-accenthover text-white font-bold px-8 py-4 rounded-xl text-center transition flex items-center justify-center space-x-2 text-base shadow-lg shadow-accent/20">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <span>Позвонить мастеру</span>
+                    </a>
+                    <a href="#calculator" class="bg-cardbg hover:bg-cardborder border border-cardborder text-white font-semibold px-8 py-4 rounded-xl text-center transition flex items-center justify-center space-x-2 text-base">
+                        <i class="fa-solid fa-calculator text-accent"></i>
+                        <span>Рассчитать стоимость</span>
+                    </a>
+                </div>
+
+                <!-- Features Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-cardbg/60 border border-cardborder p-4 rounded-xl backdrop-blur-sm">
+                        <div class="text-accent text-xl mb-2"><i class="fa-solid fa-clock"></i></div>
+                        <div class="text-white font-bold text-sm">09:00 – 22:00</div>
+                        <div class="text-gray-400 text-xs">Без выходных</div>
+                    </div>
+                    <div class="bg-cardbg/60 border border-cardborder p-4 rounded-xl backdrop-blur-sm">
+                        <div class="text-accent text-xl mb-2"><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="text-white font-bold text-sm">Бесплатно</div>
+                        <div class="text-gray-400 text-xs">Подкачка и домкрат</div>
+                    </div>
+                    <div class="bg-cardbg/60 border border-cardborder p-4 rounded-xl backdrop-blur-sm">
+                        <div class="text-accent text-xl mb-2"><i class="fa-solid fa-snowflake"></i></div>
+                        <div class="text-white font-bold text-sm">Дошиповка шин</div>
+                        <div class="text-gray-400 text-xs">Ремонтными шипами</div>
+                    </div>
+                    <div class="bg-cardbg/60 border border-cardborder p-4 rounded-xl backdrop-blur-sm">
+                        <div class="text-accent text-xl mb-2"><i class="fa-solid fa-car"></i></div>
+                        <div class="text-white font-bold text-sm">Своя парковка</div>
+                        <div class="text-gray-400 text-xs">Для клиентов сервиса</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 border-t border-cardborder bg-darkbg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-accent font-semibold text-sm uppercase tracking-wider block mb-2">Наши услуги</span>
+                    <h2 class="text-3xl font-black text-white tracking-tight">Полный спектр работ для ваших колес</h2>
+                </div>
+                <p class="text-gray-400 text-sm max-w-md mt-2 md:mt-0">Профессиональное оборудование и опытные мастера помогут решить любую проблему на дороге.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-cardbg border border-cardborder rounded-2xl p-6 flex flex-col justify-between hover:border-accent/40 transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full">Шиномонтаж</span>
+                            <i class="fa-solid fa-arrows-rotate text-gray-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Комплексная переобувка и балансировка</h3>
+                        <p class="text-gray-400 text-sm mb-6">Аккуратный демонтаж, монтаж и точная балансировка колес легковых автомобилей.</p>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-300 border-t border-cardborder pt-4">
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-accent"></i><span>Балансировка колес с проверкой</span></li>
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-accent"></i><span>Бесплатная подкачка и пользование домкратом</span></li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-cardbg border border-cardborder rounded-2xl p-6 flex flex-col justify-between hover:border-accent/40 transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full">Диски</span>
+                            <i class="fa-solid fa-gears text-gray-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Прокатка, правка и покраска дисков</h3>
+                        <p class="text-gray-400 text-sm mb-6">Восстановление геометрии литых и штампованных дисков, устранение биения и профессиональная покраска.</p>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-300 border-t border-cardborder pt-4">
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-accent"></i><span>Прокатка и выравнивание дисков</span></li>
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-accent"></i><span>Качественная порошковая покраска</span></li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-cardbg border border-cardborder rounded-2xl p-6 flex flex-col justify-between hover:border-accent/40 transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full">Зимний сезон</span>
+                            <i class="fa-solid fa-snowflake text-gray-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Дошиповка зимних шин</h3>
+                        <p class="text-gray-400 text-sm mb-6">Установка ремонтных шипов в штатные гнезда изношенной резины для восстановления сцепления на льду.</p>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-300 border-t border-cardborder pt-4">
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-accent"></i><span>Продление срока службы зимних шин</span></li>
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-accent"></i><span>Надежная фиксация ремонтных шипов</span></li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-cardbg border border-cardborder rounded-2xl p-6 flex flex-col justify-between hover:border-accent/40 transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full">Сервис</span>
+                            <i class="fa-solid fa-shield-halved text-gray-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Оперативный ремонт проколов</h3>
+                        <p class="text-gray-400 text-sm mb-6">Быстрое устранение порезов и проколов колес. Принимаем клиентов в том числе в вечернее время близ закрытия.</p>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-300 border-t border-cardborder pt-4">
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-accent"></i><span>Гарантия на выполненные работы</span></li>
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-accent"></i><span>Оплата наличными и переводом</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Calculator Section -->
+    <section id="calculator" class="py-16 border-t border-cardborder bg-[#12151c]">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <span class="text-accent font-semibold text-sm uppercase tracking-wider block mb-2">Онлайн-калькулятор</span>
+                <h2 class="text-3xl font-black text-white tracking-tight">Примерный расчет стоимости</h2>
+                <p class="text-gray-400 text-sm mt-2">Базовый диапазон переобувки колес: от 580 до 4 500 ₽. Выберите радиус для предварительной оценки.</p>
+            </div>
+
+            <div class="bg-cardbg border border-cardborder rounded-2xl p-6 md:p-8 shadow-xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <!-- Step 1: Radius -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Радиус колеса (R):</label>
+                        <select id="wheelRadius" class="w-full bg-darkbg border border-cardborder rounded-xl p-3 text-white focus:outline-none focus:border-accent">
+                            <option value="1200">R13 - R14 (Комплект)</option>
+                            <option value="1800" selected>R15 - R16 (Комплект)</option>
+                            <option value="2500">R17 - R18 (Комплект)</option>
+                            <option value="3800">R19 и выше / Крупный радиус</option>
+                        </select>
+                    </div>
+
+                    <!-- Step 2: Additional Works -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Дополнительные работы:</label>
+                        <div class="space-y-2 mt-2">
+                            <label class="flex items-center space-x-3 text-sm text-gray-300 cursor-pointer">
+                                <input type="checkbox" id="extraRoller" value="800" class="w-4 h-4 accent-red-500 rounded bg-darkbg border-cardborder">
+                                <span>Правка / прокат дисков (1 шт)</span>
+                            </label>
+                            <label class="flex items-center space-x-3 text-sm text-gray-300 cursor-pointer">
+                                <input type="checkbox" id="extraStuds" value="1200" class="w-4 h-4 accent-red-500 rounded bg-darkbg border-cardborder">
+                                <span>Дошиповка шин (комплект / часть)</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Total Output -->
+                <div class="border-t border-cardborder pt-6 flex flex-col sm:flex-row items-center justify-between">
+                    <div class="mb-4 sm:mb-0">
+                        <span class="text-xs text-gray-400 block">Ориентировочная сумма:</span>
+                        <div class="text-3xl font-black text-white" id="totalPrice">1 800 ₽</div>
+                    </div>
+                    <a href="tel:+79512950712" class="w-full sm:w-auto bg-accent hover:bg-accenthover text-white font-bold px-6 py-3 rounded-xl transition text-center flex items-center justify-center space-x-2 shadow-lg shadow-accent/20">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Уточнить детали и записаться</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="py-16 border-t border-cardborder bg-darkbg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="mb-12">
+                <span class="text-accent font-semibold text-sm uppercase tracking-wider block mb-2">Реальные отзывы</span>
+                <h2 class="text-3xl font-black text-white tracking-tight">Что пишут водители на Картах</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Review 1 -->
+                <div class="bg-cardbg border border-cardborder rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm space-x-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                            «Отличные мастера, работают быстро и четко, цена соответствует качеству, очень рекомендую»
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 border-t border-cardborder pt-4">
+                        <div class="w-9 h-9 rounded-full bg-accent/20 text-accent font-bold flex items-center justify-center text-sm">Д</div>
+                        <div>
+                            <div class="text-white text-sm font-semibold">Дмитрий Мишин</div>
+                            <div class="text-gray-500 text-xs">Знаток города 8 уровня</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-cardbg border border-cardborder rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm space-x-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                            «Отлично! Одни из немногих кто делает и хорошо и круглосуточно / до поздна, и отличная цена, там где у других не вышло — ребята смогли»
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 border-t border-cardborder pt-4">
+                        <div class="w-9 h-9 rounded-full bg-accent/20 text-accent font-bold flex items-center justify-center text-sm">A</div>
+                        <div>
+                            <div class="text-white text-sm font-semibold">Alexandr Moiseev</div>
+                            <div class="text-gray-500 text-xs">Знаток города 18 уровня</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-cardbg border border-cardborder rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm space-x-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                            «Спасибо доброму человеку что принял! Было 21.45 когда мы ему позвонили. 15 мин до закрытия. Он не отказал принять нас! За что низкий поклон. Операция прокол колеса прошла успешно.»
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 border-t border-cardborder pt-4">
+                        <div class="w-9 h-9 rounded-full bg-accent/20 text-accent font-bold flex items-center justify-center text-sm">И</div>
+                        <div>
+                            <div class="text-white text-sm font-semibold">Игорь Андрейченко</div>
+                            <div class="text-gray-500 text-xs">Знаток города 9 уровня</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts & Location -->
+    <section class="py-16 border-t border-cardborder bg-[#12151c]">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-accent font-semibold text-sm uppercase tracking-wider block mb-2">Как нас найти</span>
+                    <h2 class="text-3xl font-black text-white tracking-tight mb-4">Контакты и адрес мастерской</h2>
+                    <p class="text-gray-400 text-sm mb-8">Находимся в Первомайском округе Мурманска. Ждем вас ежедневно до 22:00!</p>
+
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-xl bg-cardborder flex items-center justify-center text-accent shrink-0 mt-1">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <div class="text-gray-400 text-xs">Адрес сервиса</div>
+                                <div class="text-white font-semibold">г. Мурманск, Кольский проспект, 55</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-xl bg-cardborder flex items-center justify-center text-accent shrink-0 mt-1">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <div class="text-gray-400 text-xs">Телефон для связи</div>
+                                <a href="tel:+79512950712" class="text-white font-semibold hover:text-accent transition">+7 (951) 295-07-12</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-xl bg-cardborder flex items-center justify-center text-accent shrink-0 mt-1">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <div class="text-gray-400 text-xs">График работы</div>
+                                <div class="text-white font-semibold">Ежедневно с 09:00 до 22:00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://yandex.ru/maps/org/avto_shin_51/150401003777" target="_blank" class="inline-flex items-center space-x-2 bg-cardbg hover:bg-cardborder border border-cardborder px-6 py-3 rounded-xl font-medium text-white transition">
+                        <i class="fa-solid fa-map text-accent"></i>
+                        <span>Открыть в Яндекс Картах</span>
+                    </a>
+                </div>
+
+                <!-- Callout Box -->
+                <div class="bg-cardbg border border-cardborder rounded-2xl p-8 text-center relative overflow-hidden">
+                    <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-accent/5 rounded-full blur-2xl pointer-events-none"></div>
+                    <div class="w-16 h-16 rounded-2xl bg-accent/10 border border-accent/30 flex items-center justify-center text-accent text-2xl mx-auto mb-6">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Авто-Шин 51</h3>
+                    <p class="text-gray-400 text-sm mb-8">Быстрый шиномонтаж, балансировка и правка дисков в Мурманске.</p>
+                    <a href="tel:+79512950712" class="inline-flex items-center justify-center space-x-2 bg-accent hover:bg-accenthover text-white font-bold px-8 py-4 rounded-xl w-full transition shadow-lg shadow-accent/20">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Позвонить мастеру</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-cardborder bg-darkbg text-center text-xs text-gray-500">
+        <div class="max-w-6xl mx-auto px-4">
+            <p>© Авто-Шин 51 • Мурманск, Кольский пр., 55. Все права защищены.</p>
+            <p class="mt-1">Демонстрационный макет для автобизнеса. Информация не является публичной офертой.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Fixed Bottom Bar -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 bg-darkbg/95 backdrop-blur-md border-t border-cardborder p-3 flex space-x-3 md:hidden">
+        <a href="tel:+79512950712" class="flex-1 bg-accent text-white font-bold py-3 rounded-xl text-center text-sm flex items-center justify-center space-x-2 shadow-lg shadow-accent/20">
+            <i class="fa-solid fa-phone"></i>
+            <span>Позвонить</span>
+        </a>
+        <a href="https://yandex.ru/maps/org/avto_shin_51/150401003777" target="_blank" class="flex-1 bg-cardbg border border-cardborder text-white font-medium py-3 rounded-xl text-center text-sm flex items-center justify-center space-x-2">
+            <i class="fa-solid fa-location-dot text-accent"></i>
+            <span>Маршрут</span>
+        </a>
+    </div>
+
+    <!-- Calculator Script -->
+    <script>
+        const radiusSelect = document.getElementById('wheelRadius');
+        const extraRoller = document.getElementById('extraRoller');
+        const extraStuds = document.getElementById('extraStuds');
+        const totalPriceEl = document.getElementById('totalPrice');
+
+        function calculateTotal() {
+            let base = parseInt(radiusSelect.value);
+            if (extraRoller.checked) base += parseInt(extraRoller.value);
+            if (extraStuds.checked) base += parseInt(extraStuds.value);
+
+            totalPriceEl.textContent = base.toLocaleString('ru-RU') + ' ₽';
+        }
+
+        radiusSelect.addEventListener('change', calculateTotal);
+        extraRoller.addEventListener('change', calculateTotal);
+        extraStuds.addEventListener('change', calculateTotal);
+    </script>
+</body>
+</html>
